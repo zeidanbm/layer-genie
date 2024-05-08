@@ -1,0 +1,64 @@
+`<!DOCTYPE html>
+<body>
+  <div class="container">
+    <h1 class="heading" size="M">The Cyber Genie NFTs</h1>
+    <div class="title--divider"></div>
+    <span id="error" class="error"></span>
+    <span id="msg" class="msg"></span>
+    <div class="container fields">
+      <div class="field">
+        <span>Import Layer Conditions</span>
+        <button id="importConditions" class="button">Import Conditions</button>
+      </div>
+
+      <div class="section--divider"></div>
+
+      <div class="field">
+        <span>Import Layer Groups</span>
+        <button id="importGroups" class="button">Import Groups</button>
+      </div>
+
+      <div class="section--divider"></div>
+
+      <div class="field">
+        <span>Generate Collection</span>
+        <input
+          type="text"
+          id="collection-size"
+          value="10"
+          style="width: 90%"
+          placeholder="Collection Size"
+          required
+        />
+        <input
+          type="text"
+          id="collection-name"
+          value="Cyber Genie NFT"
+          style="width: 90%"
+          placeholder="Collection Name"
+          required
+        />
+        <textarea
+          type="textarea"
+          id="collection-description"
+          multiline
+          grows
+          style="width: 90%"
+          placeholder="Collection Description"
+        ></textarea>
+        <input
+          size="m"
+          class="checkbox"
+          id="check-dna"
+          name="check-dna"
+          value="0"
+        />
+        <label for="check-dna"> Check DNA</label><br />
+
+        <span size="m">Will make sure the generated NFTs are unique.</span>
+        <div class="field--divider"></div>
+        <button id="generateCollection" class="button">Generate</button>
+      </div>
+    </div>
+  </div>
+</body>
